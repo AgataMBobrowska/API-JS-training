@@ -12,4 +12,4 @@ const people = [
     ];
 
 const names = people.map((p => p.name))
-console.log("names:", names)
+console.log("names:", names) 
