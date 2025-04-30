@@ -10,4 +10,11 @@ function checkEvenOdd(number) {
 // 3 wartość zwrócona z operatora, jeżeli warunek jest fałszywy
 
 const numberStatus = checkEvenOdd(0);
-console.log(numberStatus); // Output: odd
+console.log(numberStatus); 
+
+function markExam(points) {
+   return points >= 70 ? "Pass" : "Fail";
+}
+
+const examResult = markExam(50);
+console.log(examResult);
