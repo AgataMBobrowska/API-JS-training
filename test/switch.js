@@ -1,25 +1,24 @@
 const date = new Date();
-const day = 0;
+const day = date.getDay();
 
 console.log(day);
 
-switch (day) {
-    case 1 : 
-        console.log("Poniedziałek");
-        break;
+function getDayName(day) {
+    let result = ""
+    switch (day) {
+        case 1 : 
+        return "Poniedziałek"
     case 2 :
-        console.log("Wtorek");
-        break;
+        return "Wtorek"
     case 3 :
-        console.log("Środa");
-        break;
+        return "Środa"
     case 4 :
-        console.log("Czwartek");
-        break;
+        return "Czwartek"
     case 5 :
-        console.log("Piątek");
-        break;
+        return "Piątek"
     default:
-        console.log("Weekend");
-        break;
+        return"Weekend"
+        }
 }
+
+console.log(getDayName(day));
