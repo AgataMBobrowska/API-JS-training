@@ -16,5 +16,4 @@ function markExam(points) {
    return points >= 70 ? "Pass" : "Fail";
 }
 
-const examResult = markExam(50);
-console.log(examResult);
+console.log(markExam(50));
